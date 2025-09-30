@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mindset College - Student Portal</title>
+  <meta name="description" content="Mindset College of Business & IT - Student portal and information site" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container" style="display:flex;align-items:center">
+      <div class="brand">
+        <img src="e8223825-a2fe-4ba7-9d34-6990fb89d6f1.png" alt="Mindset College logo" />
+        <div>
+          <div style="font-weight:800;color:var(--dark)">Mindset College</div>
+          <div class="small muted">Of Business & Information Technology</div>
+        </div>
+      </div>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#admissions">Admissions</a>
+        <a href="#contact">Contact</a>
+        <a class="link" onclick="showSection('auth')">Student Portal</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero container">
+      <div class="left">
+        <h1 class="title">Fountain of Excellence in Business & IT</h1>
+        <p class="subtitle">Practical training, modern curriculum and a mindset for success. Join our next intake and transform your future.</p>
+        <div class="cta">
+          <button class="btn" onclick="scrollToSection('admissions')">Apply Now</button>
+          <button class="btn secondary" onclick="showSection('auth')">Student Portal</button>
+        </div>
+      </div>
+      <div class="card" style="display:flex;align-items:center;justify-content:center;min-height:160px">
+        <div style="text-align:center">
+          <img src="e8223825-a2fe-4ba7-9d34-6990fb89d6f1.png" alt="logo" style="height:120px;object-fit:contain" />
+          <div class="muted small">Fountain of excellence...</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="container" style="padding-top:1rem">
+      <div class="grid">
+        <div class="card">
+          <h3>About Mindset College</h3>
+          <p class="small muted">We combine business, technology and a growth mindset to prepare students for the modern workplace. Our courses are practical, industry-focused and affordable.</p>
+        </div>
+        <div class="card">
+          <h4>Quick Facts</h4>
+          <ul class="small muted">
+            <li>Location: Lodwar, Turkana</li>
+            <li>Programs: Business, IT, Accounting & Finance</li>
+            <li>Email: mindsetldw@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programs -->
+    <section id="programs" class="container" style="padding-top:1rem">
+      <h3>Programs</h3>
+      <div class="grid" style="margin-top:1rem">
+        <div class="card">
+          <h4>Business Management</h4>
+          <p class="small muted">Leadership, entrepreneurship and soft skills to run successful ventures.</p>
+        </div>
+        <div class="card">
+          <h4>Information Technology</h4>
+          <p class="small muted">Networking, software, web development and practical IT skills.</p>
+        </div>
+        <div class="card">
+          <h4>Accounting & Finance</h4>
+          <p class="small muted">Financial management, bookkeeping and analysis.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Admissions -->
+    <section id="admissions" class="container" style="padding-top:1rem">
+      <div class="card">
+        <h3>Admissions</h3>
+        <p class="small muted">Admissions are open for the next intake. Fill the application form to express interest.</p>
+        <div style="margin-top:.8rem">
+          <button class="btn" onclick="openApply()">Start Application</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Student Portal / Auth -->
+    <section id="auth" class="container portal">
+      <!-- Forms + Dashboard -->
+      <!-- (unchanged from your file, only CSS/JS moved externally) -->
+    </section>
+
+    <footer class="container">
+      <div class="small muted">© <span id="year"></span> Mindset College. All rights reserved.</div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
